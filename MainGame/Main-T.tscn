@@ -1,0 +1,592 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://assets/Music/free-music-no-copyright-music-background-music-instrumental (mp3cut.net).mp3" type="AudioStream" id=1]
+[ext_resource path="res://MainGame/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/TileMap/tileset2.png" type="Texture" id=3]
+[ext_resource path="res://MainGame/Punk.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Backgorund/buildings-bg.png" type="Texture" id=5]
+[ext_resource path="res://assets/Backgorund/near-buildings-bg.png" type="Texture" id=6]
+[ext_resource path="res://assets/Backgorund/skyline-a.png" type="Texture" id=7]
+[ext_resource path="res://assets/Backgorund/skyline-b.png" type="Texture" id=8]
+[ext_resource path="res://MainGame/CyberRobot.tscn" type="PackedScene" id=9]
+[ext_resource path="res://MainGame/Biker.tscn" type="PackedScene" id=10]
+[ext_resource path="res://MainGame/Portal.tscn" type="PackedScene" id=11]
+[ext_resource path="res://MainGame/Face.tscn" type="PackedScene" id=12]
+[ext_resource path="res://MainGame/Face.gd" type="Script" id=13]
+[ext_resource path="res://assets/TileMap/tileset.png" type="Texture" id=14]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 87, 0, 87, 78, 0, 78 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 63, 0, 63, 62, 0, 62 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 233, 0, 201, 73, 32, 69.5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 99, 0, 82, 30, 14, 28 )
+
+[sub_resource type="TileSet" id=5]
+0/name = "tileset2.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 1749, 77, 87, 78 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "tileset2.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 1749, 75, 63, 62 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "tileset2.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 552, 848, 233, 73 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 3 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "tileset.png 3"
+3/texture = ExtResource( 14 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 229, 353, 99, 30 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 4 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+
+[node name="Main" type="Node2D"]
+
+[node name="BackMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -18.0
+autoplay = true
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 20.4907, 473.067 )
+z_index = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+pause_mode = 2
+position = Vector2( -0.175037, -0.262839 )
+scale = Vector2( 0.986035, 0.993208 )
+mode = 2
+tile_set = SubResource( 5 )
+cell_quadrant_size = 64
+cell_custom_transform = Transform2D( 60, 0, 0, 64, 0, 0 )
+format = 1
+tile_data = PoolIntArray( 65535, 1, 0, 392, 1, 0, 131071, 1, 0, 65928, 1, 0, 196607, 1, 0, 131464, 1, 0, 262143, 1, 0, 196685, 1, 0, 197000, 1, 0, 327679, 1, 0, 262221, 1, 0, 262226, 1, 0, 262227, 1, 0, 262536, 1, 0, 393215, 1, 0, 327757, 1, 0, 327758, 3, 0, 327763, 1, 0, 327883, 1, 0, 328002, 1, 0, 328005, 3, 0, 328066, 1, 0, 328067, 3, 0, 328072, 1, 0, 458751, 1, 0, 393251, 3, 0, 393267, 3, 0, 393271, 3, 0, 393293, 1, 0, 393297, 3, 0, 393299, 1, 0, 393327, 1, 0, 393330, 3, 0, 393362, 3, 0, 393419, 1, 0, 393424, 1, 0, 393425, 1, 0, 393429, 3, 0, 393430, 3, 0, 393431, 3, 0, 393432, 3, 0, 393433, 3, 0, 393434, 3, 0, 393435, 3, 0, 393436, 3, 0, 393437, 3, 0, 393438, 3, 0, 393439, 3, 0, 393440, 3, 0, 393441, 3, 0, 393442, 3, 0, 393443, 3, 0, 393444, 3, 0, 393445, 3, 0, 393446, 3, 0, 393447, 3, 0, 393448, 3, 0, 393449, 3, 0, 393483, 3, 0, 393493, 3, 0, 393499, 3, 0, 393518, 1, 0, 393531, 3, 0, 393535, 3, 0, 393538, 1, 0, 393545, 3, 0, 393602, 1, 0, 393606, 3, 0, 393608, 1, 0, 524287, 1, 0, 458761, 1, 0, 458777, 3, 0, 458784, 1, 0, 458800, 3, 0, 458810, 3, 0, 458829, 1, 0, 458830, 3, 0, 458835, 1, 0, 458846, 1, 0, 458860, 3, 0, 458863, 1, 0, 458870, 3, 0, 458880, 3, 0, 458884, 3, 0, 458888, 3, 0, 458895, 3, 0, 458902, 3, 0, 458909, 3, 0, 458917, 3, 0, 458925, 3, 0, 458933, 3, 0, 458940, 1, 0, 458943, 3, 0, 458955, 1, 0, 458956, 3, 0, 458961, 1, 0, 459022, 3, 0, 459027, 1, 0, 459032, 3, 0, 459039, 3, 0, 459043, 3, 0, 459047, 3, 0, 459051, 3, 0, 459054, 1, 0, 459063, 3, 0, 459074, 1, 0, 459085, 3, 0, 459101, 3, 0, 459105, 3, 0, 459138, 1, 0, 459139, 3, 0, 459144, 1, 0, 589823, 1, 0, 524294, 3, 0, 524297, 1, 0, 524306, 1, 0, 524309, 1, 0, 524317, 3, 0, 524320, 1, 0, 524327, 1, 0, 524333, 3, 0, 524349, 3, 0, 524353, 1, 0, 524355, 1, 0, 524357, 1, 0, 524359, 1, 0, 524369, 3, 0, 524371, 1, 0, 524380, 3, 0, 524382, 1, 0, 524393, 3, 0, 524399, 1, 0, 524413, 1, 0, 524428, 1, 0, 524443, 1, 0, 524449, 3, 0, 524457, 3, 0, 524465, 3, 0, 524473, 3, 0, 524476, 1, 0, 524495, 3, 0, 524497, 1, 0, 524526, 1, 0, 524545, 1, 0, 524561, 3, 0, 524563, 1, 0, 524564, 3, 0, 524590, 1, 0, 524602, 3, 0, 524610, 1, 0, 524633, 3, 0, 524660, 3, 0, 524678, 3, 0, 524680, 1, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589838, 1, 0, 589839, 1, 0, 589840, 1, 0, 589841, 1, 0, 589842, 1, 0, 589843, 1, 0, 589844, 1, 0, 589845, 1, 0, 589846, 1, 0, 589847, 1, 0, 589848, 1, 0, 589849, 1, 0, 589850, 1, 0, 589851, 1, 0, 589852, 1, 0, 589853, 1, 0, 589854, 1, 0, 589855, 1, 0, 589856, 1, 0, 589857, 1, 0, 589858, 1, 0, 589859, 1, 0, 589860, 1, 0, 589861, 1, 0, 589862, 1, 0, 589863, 1, 0, 589864, 1, 0, 589865, 1, 0, 589866, 1, 0, 589867, 1, 0, 589868, 1, 0, 589869, 1, 0, 589870, 1, 0, 589871, 1, 0, 589872, 1, 0, 589873, 1, 0, 589874, 1, 0, 589875, 1, 0, 589876, 1, 0, 589877, 1, 0, 589878, 1, 0, 589879, 1, 0, 589880, 1, 0, 589881, 1, 0, 589882, 1, 0, 589883, 1, 0, 589884, 1, 0, 589885, 1, 0, 589886, 1, 0, 589887, 1, 0, 589888, 1, 0, 589889, 1, 0, 589890, 1, 0, 589891, 1, 0, 589892, 1, 0, 589893, 1, 0, 589894, 1, 0, 589895, 1, 0, 589896, 1, 0, 589897, 1, 0, 589898, 1, 0, 589899, 1, 0, 589900, 1, 0, 589901, 1, 0, 589902, 1, 0, 589903, 1, 0, 589904, 1, 0, 589905, 1, 0, 589906, 1, 0, 589907, 1, 0, 589908, 1, 0, 589909, 1, 0, 589910, 1, 0, 589911, 1, 0, 589912, 1, 0, 589913, 1, 0, 589914, 1, 0, 589915, 1, 0, 589916, 1, 0, 589917, 1, 0, 589918, 1, 0, 589919, 1, 0, 589920, 1, 0, 589921, 1, 0, 589922, 1, 0, 589923, 1, 0, 589924, 1, 0, 589925, 1, 0, 589926, 1, 0, 589927, 1, 0, 589928, 1, 0, 589929, 1, 0, 589930, 1, 0, 589931, 1, 0, 589932, 1, 0, 589933, 1, 0, 589934, 1, 0, 589935, 1, 0, 589936, 1, 0, 589937, 1, 0, 589938, 1, 0, 589939, 1, 0, 589940, 1, 0, 589941, 1, 0, 589942, 1, 0, 589943, 1, 0, 589944, 1, 0, 589945, 1, 0, 589946, 1, 0, 589947, 1, 0, 589948, 1, 0, 589949, 1, 0, 589950, 1, 0, 589951, 1, 0, 589952, 1, 0, 589953, 1, 0, 589954, 1, 0, 589955, 1, 0, 589956, 1, 0, 589957, 1, 0, 589958, 1, 0, 589959, 1, 0, 589960, 1, 0, 589961, 1, 0, 589962, 1, 0, 589963, 1, 0, 589964, 1, 0, 589965, 1, 0, 589966, 1, 0, 589967, 1, 0, 589968, 1, 0, 589969, 1, 0, 589970, 1, 0, 589971, 1, 0, 589972, 1, 0, 589973, 1, 0, 589974, 1, 0, 589975, 1, 0, 589976, 1, 0, 589977, 1, 0, 589978, 1, 0, 589979, 1, 0, 589980, 1, 0, 589981, 1, 0, 589982, 1, 0, 589983, 1, 0, 589984, 1, 0, 589985, 1, 0, 589986, 1, 0, 589987, 1, 0, 589988, 1, 0, 589989, 1, 0, 589990, 1, 0, 589991, 1, 0, 589992, 1, 0, 589993, 1, 0, 589994, 1, 0, 589995, 1, 0, 589996, 1, 0, 589997, 1, 0, 589998, 1, 0, 589999, 1, 0, 590000, 1, 0, 590001, 1, 0, 590002, 1, 0, 590003, 1, 0, 590004, 1, 0, 590005, 1, 0, 590006, 1, 0, 590007, 1, 0, 590008, 1, 0, 590009, 1, 0, 590010, 1, 0, 590011, 1, 0, 590012, 1, 0, 590013, 1, 0, 590014, 1, 0, 590015, 1, 0, 590016, 1, 0, 590017, 1, 0, 590018, 1, 0, 590019, 1, 0, 590020, 1, 0, 590021, 1, 0, 590022, 1, 0, 590023, 1, 0, 590024, 1, 0, 590025, 1, 0, 590026, 1, 0, 590027, 1, 0, 590028, 1, 0, 590029, 1, 0, 590030, 1, 0, 590031, 1, 0, 590032, 1, 0, 590033, 1, 0, 590034, 1, 0, 590035, 1, 0, 590036, 1, 0, 590037, 1, 0, 590038, 1, 0, 590039, 1, 0, 590040, 1, 0, 590041, 1, 0, 590042, 1, 0, 590043, 1, 0, 590044, 1, 0, 590045, 1, 0, 590046, 1, 0, 590047, 1, 0, 590048, 1, 0, 590049, 1, 0, 590050, 1, 0, 590051, 1, 0, 590052, 1, 0, 590053, 1, 0, 590054, 1, 0, 590055, 1, 0, 590056, 1, 0, 590057, 1, 0, 590058, 1, 0, 590059, 1, 0, 590060, 1, 0, 590061, 1, 0, 590062, 1, 0, 590063, 1, 0, 590064, 1, 0, 590065, 1, 0, 590066, 1, 0, 590067, 1, 0, 590068, 1, 0, 590069, 1, 0, 590070, 1, 0, 590071, 1, 0, 590072, 1, 0, 590073, 1, 0, 590074, 1, 0, 590075, 1, 0, 590076, 1, 0, 590077, 1, 0, 590078, 1, 0, 590079, 1, 0, 590080, 1, 0, 590081, 1, 0, 590082, 1, 0, 590083, 1, 0, 590084, 1, 0, 590085, 1, 0, 590086, 1, 0, 590087, 1, 0, 590088, 1, 0, 590089, 1, 0, 590090, 1, 0, 590091, 1, 0, 590092, 1, 0, 590093, 1, 0, 590094, 1, 0, 590095, 1, 0, 590096, 1, 0, 590097, 1, 0, 590098, 1, 0, 590099, 1, 0, 590100, 1, 0, 590101, 1, 0, 590102, 1, 0, 590103, 1, 0, 590104, 1, 0, 590105, 1, 0, 590106, 1, 0, 590107, 1, 0, 590108, 1, 0, 590109, 1, 0, 590110, 1, 0, 590111, 1, 0, 590112, 1, 0, 590113, 1, 0, 590114, 1, 0, 590115, 1, 0, 590116, 1, 0, 590117, 1, 0, 590118, 1, 0, 590119, 1, 0, 590120, 1, 0, 590121, 1, 0, 590122, 1, 0, 590123, 1, 0, 590124, 1, 0, 590125, 1, 0, 590126, 1, 0, 590127, 1, 0, 590128, 1, 0, 590129, 1, 0, 590130, 1, 0, 590131, 1, 0, 590132, 1, 0, 590133, 1, 0, 590134, 1, 0, 590135, 1, 0, 590136, 1, 0, 590137, 1, 0, 590138, 1, 0, 590139, 1, 0, 590140, 1, 0, 590141, 1, 0, 590142, 1, 0, 590143, 1, 0, 590144, 1, 0, 590145, 1, 0, 590146, 1, 0, 590147, 1, 0, 590148, 1, 0, 590149, 1, 0, 590150, 1, 0, 590151, 1, 0, 590152, 1, 0, 590153, 1, 0, 590154, 1, 0, 590155, 1, 0, 590156, 1, 0, 590157, 1, 0, 590158, 1, 0, 590159, 1, 0, 590160, 1, 0, 590161, 1, 0, 590162, 1, 0, 590163, 1, 0, 590164, 1, 0, 590165, 1, 0, 590166, 1, 0, 590167, 1, 0, 590168, 1, 0, 590169, 1, 0, 590170, 1, 0, 590171, 1, 0, 590172, 1, 0, 590173, 1, 0, 590174, 1, 0, 590175, 1, 0, 590176, 1, 0, 590177, 1, 0, 590178, 1, 0, 590179, 1, 0, 590180, 1, 0, 590181, 1, 0, 590182, 1, 0, 590183, 1, 0, 590184, 1, 0, 590185, 1, 0, 590186, 1, 0, 590187, 1, 0, 590188, 1, 0, 590189, 1, 0, 590190, 1, 0, 590191, 1, 0, 590192, 1, 0, 590193, 1, 0, 590194, 1, 0, 590195, 1, 0, 590196, 1, 0, 590197, 1, 0, 590198, 1, 0, 590199, 1, 0, 590200, 1, 0, 590201, 1, 0, 590202, 1, 0, 590203, 1, 0, 590204, 1, 0, 590205, 1, 0, 590206, 1, 0, 590207, 1, 0, 590208, 1, 0, 590209, 1, 0, 590210, 1, 0, 590211, 1, 0, 590212, 1, 0, 590213, 1, 0, 590214, 1, 0, 590215, 1, 0, 590216, 1, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 256, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 129.13, 284.792 )
+scale = Vector2( 2, 2.38082 )
+texture = ExtResource( 7 )
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 256, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 638.713, 285.541 )
+scale = Vector2( 2, 2.37458 )
+texture = ExtResource( 8 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 1 )
+motion_mirroring = Vector2( 576, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 240.041, 334.477 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 5 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 739.5, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 368.367, 413.402 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 6 )
+
+[node name="OPunk" parent="." instance=ExtResource( 4 )]
+position = Vector2( 14403, 526.689 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 17141, 532.689 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk15" parent="." instance=ExtResource( 4 )]
+position = Vector2( 18331, 524.689 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk16" parent="." instance=ExtResource( 4 )]
+position = Vector2( 19635.4, 530.352 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 21184.7, 525.59 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 22295.9, 530.352 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2208.83, 530.291 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2645.46, 531.414 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4201.2, 525.801 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 6064.06, 530.291 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 7037.25, 530.843 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 7753.14, 529.728 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 8984.21, 530.847 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 9386.16, 527.483 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 11733.9, 529.165 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 13494.5, 527.667 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 12547.5, 532.161 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OPunk2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1176.27, 529.4 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot" parent="." instance=ExtResource( 9 )]
+position = Vector2( 14772.5, 530.036 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot14" parent="." instance=ExtResource( 9 )]
+position = Vector2( 15925, 531.624 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot15" parent="." instance=ExtResource( 9 )]
+position = Vector2( 16834.9, 527.624 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot16" parent="." instance=ExtResource( 9 )]
+position = Vector2( 19183.3, 525.736 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot18" parent="." instance=ExtResource( 9 )]
+position = Vector2( 20621.5, 527.323 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot19" parent="." instance=ExtResource( 9 )]
+position = Vector2( 21466, 527.323 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot20" parent="." instance=ExtResource( 9 )]
+position = Vector2( 22655, 520.974 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot17" parent="." instance=ExtResource( 9 )]
+position = Vector2( 20081.9, 527.624 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1682.67, 530.127 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2846.66, 527.882 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3311.36, 529.004 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 4069.02, 529.005 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot7" parent="." instance=ExtResource( 9 )]
+position = Vector2( 6687.57, 529.568 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot8" parent="." instance=ExtResource( 9 )]
+position = Vector2( 8172.59, 530.686 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot9" parent="." instance=ExtResource( 9 )]
+position = Vector2( 8088.51, 529.568 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot10" parent="." instance=ExtResource( 9 )]
+position = Vector2( 10291.7, 529.004 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot11" parent="." instance=ExtResource( 9 )]
+position = Vector2( 11938.1, 527.323 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot12" parent="." instance=ExtResource( 9 )]
+position = Vector2( 13178.7, 528.821 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot13" parent="." instance=ExtResource( 9 )]
+position = Vector2( 13736.1, 530.319 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OCyberRobot2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 858.815, 530.358 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker" parent="." instance=ExtResource( 10 )]
+position = Vector2( 14579.1, 528.012 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker18" parent="." instance=ExtResource( 10 )]
+position = Vector2( 15653.7, 526.425 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker19" parent="." instance=ExtResource( 10 )]
+position = Vector2( 16533.7, 532.425 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker20" parent="." instance=ExtResource( 10 )]
+position = Vector2( 18879.7, 532.425 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker21" parent="." instance=ExtResource( 10 )]
+position = Vector2( 18068, 530.537 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker22" parent="." instance=ExtResource( 10 )]
+position = Vector2( 20824.1, 524.874 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker23" parent="." instance=ExtResource( 10 )]
+position = Vector2( 21843.2, 528.049 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2000.92, 532.505 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2926.95, 529.138 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker5" parent="." instance=ExtResource( 10 )]
+position = Vector2( 3125.63, 528.015 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker6" parent="." instance=ExtResource( 10 )]
+position = Vector2( 3948.39, 531.382 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker7" parent="." instance=ExtResource( 10 )]
+position = Vector2( 5105.47, 529.701 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker10" parent="." instance=ExtResource( 10 )]
+position = Vector2( 4653.06, 533.064 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker8" parent="." instance=ExtResource( 10 )]
+position = Vector2( 6788.94, 531.383 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker12" parent="." instance=ExtResource( 10 )]
+position = Vector2( 8541.37, 531.383 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker9" parent="." instance=ExtResource( 10 )]
+position = Vector2( 7991.42, 531.383 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker11" parent="." instance=ExtResource( 10 )]
+position = Vector2( 8763.37, 533.064 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker13" parent="." instance=ExtResource( 10 )]
+position = Vector2( 9826.26, 528.019 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker16" parent="." instance=ExtResource( 10 )]
+position = Vector2( 11607.3, 534.746 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker14" parent="." instance=ExtResource( 10 )]
+position = Vector2( 10769.7, 531.383 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker15" parent="." instance=ExtResource( 10 )]
+position = Vector2( 12204.3, 529.701 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker17" parent="." instance=ExtResource( 10 )]
+position = Vector2( 12862.1, 528.203 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="OBiker2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1501.13, 530.723 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="Portal" parent="." instance=ExtResource( 11 )]
+position = Vector2( 22867, 290.207 )
+
+[node name="Face" parent="." instance=ExtResource( 12 )]
+position = Vector2( 647.475, 389.063 )
+script = ExtResource( 13 )
+
+[node name="Face5" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2119.67, 281.583 )
+script = ExtResource( 13 )
+
+[node name="Face6" parent="." instance=ExtResource( 12 )]
+position = Vector2( 3194.98, 274.848 )
+script = ExtResource( 13 )
+
+[node name="Face4" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1530.36, 347.885 )
+script = ExtResource( 13 )
+
+[node name="Face3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 4056.64, 413.072 )
+script = ExtResource( 13 )
+
+[node name="Face7" parent="." instance=ExtResource( 12 )]
+position = Vector2( 4942.94, 160.803 )
+script = ExtResource( 13 )
+
+[node name="Face8" parent="." instance=ExtResource( 12 )]
+position = Vector2( 5595.27, 343.02 )
+script = ExtResource( 13 )
+
+[node name="Face9" parent="." instance=ExtResource( 12 )]
+position = Vector2( 6791.23, 305.437 )
+script = ExtResource( 13 )
+
+[node name="Face10" parent="." instance=ExtResource( 12 )]
+position = Vector2( 7850.76, 532.479 )
+script = ExtResource( 13 )
+
+[node name="Face11" parent="." instance=ExtResource( 12 )]
+position = Vector2( 8925.43, 362.618 )
+script = ExtResource( 13 )
+
+[node name="Face12" parent="." instance=ExtResource( 12 )]
+position = Vector2( 10044.5, 410.884 )
+script = ExtResource( 13 )
+
+[node name="Face13" parent="." instance=ExtResource( 12 )]
+position = Vector2( 10522.8, 405.023 )
+script = ExtResource( 13 )
+
+[node name="Face15" parent="." instance=ExtResource( 12 )]
+position = Vector2( 11347.2, 360.936 )
+script = ExtResource( 13 )
+
+[node name="Face16" parent="." instance=ExtResource( 12 )]
+position = Vector2( 12601.3, 486.794 )
+script = ExtResource( 13 )
+
+[node name="Face17" parent="." instance=ExtResource( 12 )]
+position = Vector2( 13077.8, 494.286 )
+script = ExtResource( 13 )
+
+[node name="Face18" parent="." instance=ExtResource( 12 )]
+position = Vector2( 13431.4, 497.282 )
+script = ExtResource( 13 )
+
+[node name="Face19" parent="." instance=ExtResource( 12 )]
+position = Vector2( 13903.3, 500.279 )
+script = ExtResource( 13 )
+
+[node name="Face20" parent="." instance=ExtResource( 12 )]
+position = Vector2( 14201.5, 417.872 )
+script = ExtResource( 13 )
+
+[node name="Face21" parent="." instance=ExtResource( 12 )]
+position = Vector2( 15842.1, 339.96 )
+script = ExtResource( 13 )
+
+[node name="Face22" parent="." instance=ExtResource( 12 )]
+position = Vector2( 16614.1, 341.96 )
+script = ExtResource( 13 )
+
+[node name="Face23" parent="." instance=ExtResource( 12 )]
+position = Vector2( 17026.1, 339.96 )
+script = ExtResource( 13 )
+
+[node name="Face24" parent="." instance=ExtResource( 12 )]
+position = Vector2( 17736.1, 335.96 )
+script = ExtResource( 13 )
+
+[node name="Face25" parent="." instance=ExtResource( 12 )]
+position = Vector2( 18016.1, 293.96 )
+script = ExtResource( 13 )
+
+[node name="Face26" parent="." instance=ExtResource( 12 )]
+position = Vector2( 18922.1, 267.96 )
+script = ExtResource( 13 )
+
+[node name="Face27" parent="." instance=ExtResource( 12 )]
+position = Vector2( 19514.9, 296.276 )
+script = ExtResource( 13 )
+
+[node name="Face28" parent="." instance=ExtResource( 12 )]
+position = Vector2( 20456.9, 417.092 )
+script = ExtResource( 13 )
+
+[node name="Face29" parent="." instance=ExtResource( 12 )]
+position = Vector2( 20932.7, 362.133 )
+script = ExtResource( 13 )
+
+[node name="Face30" parent="." instance=ExtResource( 12 )]
+position = Vector2( 23121.7, 465.314 )
+script = ExtResource( 13 )
+
+[node name="Face31" parent="." instance=ExtResource( 12 )]
+position = Vector2( 22943.9, 406.58 )
+script = ExtResource( 13 )
+
+[node name="Face32" parent="." instance=ExtResource( 12 )]
+position = Vector2( 23121.7, 339.909 )
+script = ExtResource( 13 )
+
+[node name="Face33" parent="." instance=ExtResource( 12 )]
+position = Vector2( 22942.3, 278 )
+script = ExtResource( 13 )
+
+[node name="Face34" parent="." instance=ExtResource( 12 )]
+position = Vector2( 22059.7, 439.915 )
+script = ExtResource( 13 )
+
+[node name="Face14" parent="." instance=ExtResource( 12 )]
+position = Vector2( 9576.28, 407.815 )
+script = ExtResource( 13 )
+
+[node name="Face2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1182.91, 448.753 )
+script = ExtResource( 13 )
+
+[connection signal="body_entered" from="Portal" to="Player" method="_on_Portal_body_entered"]
+[connection signal="body_entered" from="Face" to="Face" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face5" to="Face5" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face6" to="Face6" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face4" to="Face4" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face3" to="Face3" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face7" to="Face7" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face8" to="Face8" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face9" to="Face9" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face10" to="Face10" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face11" to="Face11" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face12" to="Face12" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face13" to="Face13" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face15" to="Face15" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face16" to="Face16" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face17" to="Face17" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face18" to="Face18" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face19" to="Face19" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face20" to="Face20" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face21" to="Face21" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face22" to="Face22" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face23" to="Face23" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face24" to="Face24" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face25" to="Face25" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face26" to="Face26" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face27" to="Face27" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face28" to="Face28" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face29" to="Face29" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face30" to="Face30" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face31" to="Face31" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face32" to="Face32" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face33" to="Face33" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face34" to="Face34" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face14" to="Face14" method="_on_Face_body_entered"]
+[connection signal="body_entered" from="Face2" to="Face2" method="_on_Face_body_entered"]

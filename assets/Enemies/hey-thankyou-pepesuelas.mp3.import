@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hey-thankyou-pepesuelas.mp3-e94432229e2d880ece78b822673b4697.mp3str"
+
+[deps]
+
+source_file="res://assets/Enemies/hey-thankyou-pepesuelas.mp3"
+dest_files=[ "res://.import/hey-thankyou-pepesuelas.mp3-e94432229e2d880ece78b822673b4697.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

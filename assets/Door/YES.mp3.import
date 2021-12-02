@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/YES.mp3-3752407ee4b9a6ae01f1dccb47f8b0ca.mp3str"
+
+[deps]
+
+source_file="res://assets/Door/YES.mp3"
+dest_files=[ "res://.import/YES.mp3-3752407ee4b9a6ae01f1dccb47f8b0ca.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

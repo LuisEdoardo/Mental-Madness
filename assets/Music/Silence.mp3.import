@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Silence.mp3-800560397c56945f4a8f4f67d9a8f9da.mp3str"
+
+[deps]
+
+source_file="res://assets/Music/Silence.mp3"
+dest_files=[ "res://.import/Silence.mp3-800560397c56945f4a8f4f67d9a8f9da.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
