@@ -45,7 +45,7 @@ script = ExtResource( 18 )
 position = Vector2( 512.432, 298.811 )
 scale = Vector2( 1.06293, 1.10487 )
 frames = SubResource( 1 )
-frame = 3
+frame = 1
 speed_scale = 1.5
 playing = true
 

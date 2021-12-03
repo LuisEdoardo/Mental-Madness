@@ -116,7 +116,7 @@ font_data = ExtResource( 76 )
 position = Vector2( 511.359, 300.275 )
 scale = Vector2( 1.06442, 1.10351 )
 frames = SubResource( 1 )
-frame = 3
+frame = 14
 speed_scale = 2.0
 playing = true
 
